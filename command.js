@@ -1,6 +1,5 @@
 import { REST, Routes } from 'discord.js';
-// const BOT_TOKEN='MTExNjI2NDc2OTYwMzc3NjU2Mg.GIjyUK.4QYphorFbi3PHYQrVKLjHfYElcKb4XDQ1qdVZ8'
-// const CLIENT_ID = '1116264769603776562'
+
 
 const commands = [
     {
