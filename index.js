@@ -1,7 +1,7 @@
 import { Client, GatewayIntentBits } from 'discord.js';
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] });
-const BOT_TOKEN = 'MTExNjI2NDc2OTYwMzc3NjU2Mg.GtDB1b.kA3ave7jp0fwFRNdDEtBXGph4fM2nFRnyjAqyg';
-// import { BOT_TOKEN } from './constants';
+
+// const BOT_TOKEN='MTExNjI2NDc2OTYwMzc3NjU2Mg.GIjyUK.4QYphorFbi3PHYQrVKLjHfYElcKb4XDQ1qdVZ8'
 
 client.on('messageCreate', message => {
     if(message.author.bot) return;
@@ -9,5 +9,9 @@ client.on('messageCreate', message => {
         content : "Hi From Bot",
     })
 });
+
+client.on('interactionCreate', interaction => {
+    interaction.reply(' Pong !');
+})
 
 client.login(BOT_TOKEN);
